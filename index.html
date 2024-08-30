@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/804bef83c8.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <h1><span>K</span>avindu</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <section id="welcome-section">
+                <h1>Hey, I'm <span>Kavindu</span></h1>
+                <p> UI/UX Designer & Frontend Developer</p>
+            </section>
+        </div>
+    </div>
+    <!-- ----------------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus qui dolores architecto. Porro atque omnis adipisci eveniet accusamus rem eius, mollitia in, tempore quod similique esse rerum cupiditate. Ad, nulla!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX Design</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 (Personal-Project)</span><br>POS System using JAVA</li>
+                            <li><span>2023 (Personal-Project)</span><br>E-Commerce Web Application using MERN Stack</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2020</span><br>Web Development(NVQ-4) at VTA</li>
+                            <li><span>2021-2024</span><br>HNDIT at SLIATE</li>
+                            <li><span>2024-Current</span><br>Responsive Web Designing at freeCodeCamp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------services-------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Services</h1>
+            <div class="services-list">
+        
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Crafting user-centric designs that blend aesthetics with functionality. From wireframes to final mockups, I focus on creating seamless experiences that engage and delight users.</p>
+                    <a href="#">Learn more</a>
+                </div>
+        
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Designing visually appealing and responsive websites tailored to your brand’s identity. My approach combines creativity with technical precision to deliver websites that stand out.</p>
+                    <a href="#">Learn more</a>
+                </div>
+        
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>Building functional and intuitive mobile applications. I focus on user experience and performance to ensure your app delivers value and meets user expectations.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- ----------------------projects-------------------- -->
+
+    <section id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="project-tile">
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1705948354007-2aaf1259ac4b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="POS System">
+                    <div class="layer">
+                        <h3>POS System</h3>
+                        <p>A POS system for efficient transactions and inventory management in retail and restaurants.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://cdn.pixabay.com/photo/2018/09/21/07/07/e-commerce-3692440_1280.jpg" alt="E-Commerce Web Application">
+                    <div class="layer">
+                        <h3>E-Commerce Web Application</h3>
+                        <p>An e-commerce platform with product management, payment processing, and customer support features.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://cdn.pixabay.com/photo/2019/04/20/04/51/social-media-4140959_1280.jpg" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A social media app for connecting users, sharing content, and building communities.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+    
+
+     <!-- ----------------------Contact-------------------- -->
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i></i> kavindujayawardhana61@gmial.com</p>
+                    <p><i class="fa-solid fa-phone-square"></i> +94755544006</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/kavinduJay99" id="profile-link"><i class="fa-brands fa-github-square"></i></a>
+                        <a href="https://www.linkedin.com/in/kavindu-jayawardhana-145698318/" id="profile-link"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://web.facebook.com/freecodecamp?_rdc=1&_rdr" id="profile-link"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="" id="profile-link"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="https://x.com/freecodecamp" id="profile-link"><i class="fa-brands fa-twitter-square"></i></a>
+                    </div>
+                    <a href="Images/Kavindu.pdf" download class="btn btn2"><i class="fa-solid fa-file-arrow-down"></i>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Kavindu</p>
+        </div>
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
